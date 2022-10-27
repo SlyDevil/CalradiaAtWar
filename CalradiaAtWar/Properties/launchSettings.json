@@ -1,0 +1,16 @@
+﻿{
+  "profiles": {
+    "Calradia At War": {
+      "commandName": "Executable",
+      "executablePath": "$(GameFolder)\\bin\\Win64_Shipping_Client\\Bannerlord.exe",
+      "commandLineArgs": "/singleplayer _MODULES_*Native*SandBoxCore*Sandbox*StoryMode*CustomBattle*CustomSpawns*$(ModuleName)*_MODULES_",
+      "workingDirectory": "$(GameFolder)\\bin\\Win64_Shipping_Client"
+    },
+    "Calradia At War with QuickStart": {
+      "commandName": "Executable",
+      "executablePath": "$(GameFolder)\\bin\\Win64_Shipping_Client\\Bannerlord.exe",
+      "commandLineArgs": "/singleplayer _MODULES_*Bannerlord.Harmony*Bannerlord.ButterLib*Bannerlord.UIExtenderEx*Bannerlord.MBOptionScreen*Native*SandBoxCore*Sandbox*StoryMode*CustomBattle*QuickStart*CustomSpawns*$(ModuleName)*_MODULES_",
+      "workingDirectory": "$(GameFolder)\\bin\\Win64_Shipping_Client"
+    }
+  }
+}
