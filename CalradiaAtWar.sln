@@ -4,12 +4,20 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{12CCA2B5-A874-47B3-BB43-799275014D7B}"
 	ProjectSection(SolutionItems) = preProject
 		supported-game-versions.txt = supported-game-versions.txt
+		changelog.txt = changelog.txt
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{CB20C6C8-2857-4B1E-9C00-265893C094E3}"
 	ProjectSection(SolutionItems) = preProject
 		build\common.props = build\common.props
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "github", "github", "{B8E7B38E-4024-4135-B8AE-8FFB01D48BEF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{F2A68D24-E682-4AD0-87E7-0FD67F3273AA}"
+ProjectSection(SolutionItems) = preProject
+	.github\workflows\publish.yml = .github\workflows\publish.yml
+EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +37,8 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{CB20C6C8-2857-4B1E-9C00-265893C094E3} = {12CCA2B5-A874-47B3-BB43-799275014D7B}
+		{B8E7B38E-4024-4135-B8AE-8FFB01D48BEF} = {12CCA2B5-A874-47B3-BB43-799275014D7B}
+		{F2A68D24-E682-4AD0-87E7-0FD67F3273AA} = {B8E7B38E-4024-4135-B8AE-8FFB01D48BEF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B3D4AB65-9162-4EE2-9413-1867C12DC041}
