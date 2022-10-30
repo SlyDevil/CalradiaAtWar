@@ -1,0 +1,57 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net472</TargetFramework>
+        <Platforms>x64</Platforms>
+        <LangVersion>9.0</LangVersion>
+        <Nullable>enable</Nullable>
+        <Configurations>Release;Debug</Configurations>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <ModuleName>CalradiaAtWar</ModuleName>
+        <DisplayName>Calradia At War</DisplayName>
+        <AssemblyName>$(ModuleName)</AssemblyName>
+        <Version>1.9.0</Version>
+        <BinaryFolder>$(GameFolder)\Modules\$(ModuleName)\bin\Win64_Shipping_Client</BinaryFolder>
+    </PropertyGroup>
+
+    <!-- Remove generated binaries as there is no code -->
+    <Target Name="DeleteFiles" AfterTargets="Build">
+        <ItemGroup>
+            <FilesToDelete Include="$(BinaryFolder)\$(ModuleName).*" />
+        </ItemGroup>
+        <Message Text="Deleting Files @(FilesToDelete)" />
+        <Delete Files="@(FilesToDelete)">
+            <Output TaskParameter="DeletedFiles" ItemName="FilesDeleted" />
+        </Delete>
+        <Message Text="Files deleted: @(FilesDeleted)" />
+    </Target>
+
+    <!-- Versions of Major Dependencies (For Package References & SubModule.xml Substitution) -->
+    <PropertyGroup>
+        <CustomSpawnsVersion>1.9.0</CustomSpawnsVersion>
+        <BuildResourcesVersion>1.0.0.33</BuildResourcesVersion>
+    </PropertyGroup>
+
+    <!-- NuGet Packages -->
+    <ItemGroup>
+        <PackageReference Include="Bannerlord.BuildResources" Version="$(BuildResourcesVersion)">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>contentfiles; buildtransitive</IncludeAssets>
+        </PackageReference>
+    </ItemGroup>
+
+    <!-- Extra Substitution Variables to Use in SubModule.xml -->
+    <ItemGroup>
+        <SubModuleOverrides Include="DisplayName">
+            <Regex>\$displayname\$</Regex>
+            <Replacement>$(DisplayName)</Replacement>
+        </SubModuleOverrides>
+        <SubModuleOverrides Include="CustomSpawnsVersion">
+            <Regex>\$customspawnsversion\$</Regex>
+            <Replacement>$(CustomSpawnsVersion)</Replacement>
+        </SubModuleOverrides>
+    </ItemGroup>
+
+</Project>
