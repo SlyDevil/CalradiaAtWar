@@ -67,7 +67,7 @@
 	 	<RepeatSpawnRolls>1</RepeatSpawnRolls>
 	 	<SpawnMessage>Constant war has resulted in more and more people turning to banditry in the forests, and the chiefs have gathered the new recruits into a giant expedition!</SpawnMessage>
 	 	<SpawnMessageColor>danger</SpawnMessageColor>
-	 	<DeathMessage>The Forest Expeditioners have been brought to justice [deathPlace]!</DeathMessage>
+	 	<DeathMessage>The Forest Expeditioners have been brought to justice at [deathPlace]!</DeathMessage>
 	 	<DeathMessageColor>relief</DeathMessageColor>
 	 	<DynamicSpawnChancePeriod> 45 </DynamicSpawnChancePeriod>
 	 	<DynamicSpawnChanceEffect> 0.5 </DynamicSpawnChanceEffect>
