@@ -2,6 +2,7 @@
 Version: 2.0.0
 Game Versions: v1.2.0,v1.2.1,v1.2.2,v1.2.3,v1.2.4,v1.2.5,v1.2.6,1.2.7,v1.2.8
 * Breaking change: Drop support for Bannerlord v1.1.X.
+* Feature: Add new dialogue providing the player a way to attack parties from "order" factions (Redemptive Order, Order of the Phoenix and Northern Liberators).
 * Improvement: Fix some typos in the dialogue.
 * Tech: Support Bannerlord v1.2.8.
 * Tech: Bump Custom Spawns API version to 2.0.0.
