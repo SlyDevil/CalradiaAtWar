@@ -232,9 +232,8 @@ if set to true this is player dialogue. If multiple player dialogues are trigger
 	</Dialogue>
 
 	<Dialogue condition = "PartyIsInFaction(cs_southern_enslavers) AND IsFriendly" text = "Beautiful weather out there to capture some innocent people, don't you think?">
-		<Dialogue  text = "Indeed so. May your slaves be healthy and expensive!" consequence = "Leave" player = "true">
-
-		</Dialogue>
+		<Dialogue  text = "Indeed so. May your slaves be healthy and expensive!" consequence = "Leave" player = "true"/>
+		<Dialogue  text = "Oh, absolutely! I'll start this day with you" consequence = "Battle" player = "true"/>
 	</Dialogue>
 
 	<!-- Northern -->
@@ -285,8 +284,9 @@ if set to true this is player dialogue. If multiple player dialogues are trigger
 
 	</Dialogue>
 
-	<Dialogue condition = "PartyIsInFaction(cs_madmen) AND IsFriendly" text = "Huh?" consequence = "Leave">
-
+	<Dialogue condition = "PartyIsInFaction(cs_madmen) AND IsFriendly" text = "Huh?">
+		<Dialogue  text = "Die!" consequence = "Battle" player = "true"/>
+		<Dialogue  text = "Away with you vile beggar!" consequence = "Leave" player = "true"/>
 	</Dialogue>
 
 <!-- -->
@@ -297,12 +297,10 @@ if set to true this is player dialogue. If multiple player dialogues are trigger
 
 	</Dialogue>
 
-	<Dialogue condition = "PartyIsInFaction(cs_harbingers_of_wrath) AND IsFriendly" text = "How rare! A friendly face on the road" consequence = "Leave">
-		<Dialogue text = "It's my pleasure! Take care. You are doing work for all mankind." consequence = "Leave" player = "true">
-
-		</Dialogue>
+	<Dialogue condition = "PartyIsInFaction(cs_harbingers_of_wrath) AND IsFriendly" text = "How rare! A friendly face on the road">
+		<Dialogue text = "No scum, this is the end of your journey!" consequence = "Battle" player = "true"/>
+		<Dialogue text = "It's my pleasure! Take care. You are doing work for all mankind." consequence = "Leave" player = "true"/>
 	</Dialogue>
-
 <!-- -->
 
 <!-- Redemptive Order -->
