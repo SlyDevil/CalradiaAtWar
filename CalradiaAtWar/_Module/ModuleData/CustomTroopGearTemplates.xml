@@ -27,7 +27,7 @@
     </StatsData>
     <UsablePieces>
       <UsablePiece piece_id="axe_craft_11_handle"/>
-      <UsablePiece piece_id="axe_craft_12_handle"/>
+      <!--<UsablePiece piece_id="axe_craft_12_handle"/>-->
       <UsablePiece piece_id="axe_craft_28_handle"/>
       <UsablePiece piece_id="mace_head_6"/>
       <UsablePiece piece_id="cs_maul_tip_2"/>
