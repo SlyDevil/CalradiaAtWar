@@ -27,7 +27,7 @@
     </StatsData>
     <UsablePieces>
       <UsablePiece piece_id="axe_craft_11_handle"/>
-      <!--<UsablePiece piece_id="axe_craft_12_handle"/>-->
+      <!--<UsablePiece piece_id="axe_craft_12_handle"/> causes unusable Throwing Hammer smithing category to be available on game start-->
       <UsablePiece piece_id="axe_craft_28_handle"/>
       <UsablePiece piece_id="mace_head_6"/>
       <UsablePiece piece_id="cs_maul_tip_2"/>
